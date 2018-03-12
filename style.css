@@ -1,0 +1,108 @@
+body {
+    font-size: 16px;
+}
+
+#mainDivId {
+    padding: 2rem;
+    height: 100%;
+}
+
+#searchId {
+    padding: 0 1rem 2rem 0;
+}
+
+.searchIcon {
+    top: 3rem;
+    position: absolute;
+    opacity: 0.6;
+    left: 2.4rem;
+    padding-right: 10px;
+}
+
+.searchIcon::before {
+    content: '\1F50E';
+}
+
+#searchInput {
+    padding: 1rem 1rem 1rem 3rem;
+    width: 40%;
+}
+
+.grid {
+    height: calc(100% - 10rem);
+}
+
+#paginationId {
+    padding: 1rem;
+    background: #EEE;
+    text-align: center;
+    border: 1px solid #DDD;
+}
+
+.table {
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.tableHead {
+    text-align: center;
+    font-weight: 700;
+    width: 99%;
+    background: #EEE;
+}
+
+#pageNoId {
+    width: 4rem;
+    text-align: center;
+}
+
+.headerLabel {
+    padding: 1.6rem !important;
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+tbody {
+    height: calc(100% - 56px);
+    overflow: auto;
+    display: block;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 0.5s linear infinite; /* Safari */
+    animation: spin 0.5s linear infinite;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 1000;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.bodyOverlay {
+    background: content-box;
+    opacity: 0.4;
+    pointer-events: none;
+}
